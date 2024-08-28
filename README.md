@@ -37,11 +37,11 @@ To be clear, this library deals with *classical* encryption or cryptography, whi
 
 ## Important general information about ciphers
 
-This software will, with most ciphers, downcase all text. I opted for the software to consistently use lowercase where case is irrelevant (such as with ciphers like the ADFGX cipher), although it is popular online to have all enciphered text in uppercase.
+Many ciphers in this library will downcase all text. I opted for the software to consistently use lowercase where case is irrelevant (such as with ciphers like the ADFGX cipher), although it is popular online to have all enciphered text in uppercase.
 
 Many ciphers can receive an alphabet as an argument, which will cause filtering of the original text such that all characters in text that are not in the alphabet are lost. Some may consider this effect undesirable, but, because one of my goals for this software was to simulate serious application of the various ciphers, I opted for consistent filtering where appropriate so as to prevent all transparencies (seeing that most historical applications of ciphers proceeded without space, punctuation, etc.). This can cause other potential issues when it comes to deciphering enciphered text; but as long as you are deciphering text that was enciphered within this library, there will be no issues; however, if you are trying to decipher something found elsewhere (such as online), you may need to use one of the libraries general functions, such as REMOVE-CHARACTERS-FROM-STRING, to clear away textual noise beforehand, because alphabet-using ciphers will trigger an error if the text has a character not in the alphabet.
 
-Some ciphers that use alphabets, but without a grid (such as the Columnar Transposition cipher) will also filter, though such filtering can be avoided by providing a custom alphabet string. On the other hand, some other ciphers that do not use grids (such as Scytale and Rail-fence ciphers) do not have an alphabet parameter, and allow for more fine-tuned filtering of text based on type (such as spacing, punctuation, etc.).
+Some ciphers that use alphabets, but without a grid (such as the Columnar Transposition cipher) will also filter, though such filtering can be avoided by providing a custom alphabet string. On the other hand, some other ciphers that do not use grids do not have an alphabet parameter (such as Scytale and Rail-fence ciphers), and allow for more fine-tuned filtering of text based on type (such as spacing, punctuation, etc.).
 
 More could be said (and may later be said), but for now, please consult the code and its documentation strings for any other concerns.
 
