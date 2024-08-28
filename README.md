@@ -1,6 +1,6 @@
 # Clyptic
 
-A library for classical encryption in Common Lisp
+A library for classical cryptography in Common Lisp
 
 ## What is this?
 
