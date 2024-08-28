@@ -2,7 +2,7 @@
 
 A library for classical cryptography in Common Lisp
 
-## What is this?
+## About
 
 This is a collection of tools, entirely written in the programming language of Common Lisp, that enables enciphering and deciphering of text, and also various string manipulation techniques. Primarily it is a collection of cipher implementations, such as ADFGX cipher, trifid cipher, four-square cipher, etc., prepared with a mind towards consistency and systematic overlap.
 
