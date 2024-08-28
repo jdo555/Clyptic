@@ -10,7 +10,7 @@ This is a collection of tools, entirely written in the programming language of C
 
 This is a personal project that began many years ago as simple coding practice, before branching out into an exploration of classical cryptography. After a certain amount of time pursuing that curiosity, I decided I might as well turn the resulting code into a more formal library, in the hopes that someone might find it useful.
 
-To be clear, this library deals with *classical* encryption or cryptography, which might otherwise be referred to as enciphering, and which very much predates modern strong cryptography. As such, the primary purpose of this software is amusement.
+To be clear, this library deals with *classical* encryption or cryptography, which might otherwise be referred to as enciphering, and which very much predates modern strong cryptography. As such, the primary purpose of this software is to provide amusement.
 
 ## Included ciphers
 
